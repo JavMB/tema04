@@ -25,6 +25,7 @@ public class Ejercicio6 {
         int numVeces= sc.nextInt();
         System.out.println("Dime el numero de lineas que quieres imprimirlo");
         int numLineas= sc.nextInt();
+        sc.close();
 
         imprimirCaracterEspacios(c,numVeces,numLineas);
 
