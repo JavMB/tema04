@@ -1,12 +1,15 @@
 package com.javiermengual.tema04;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import com.javiermengual.tema04.lib.IO;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+//      String nombreProducto=  IO.solicitarString("indica el nombre del producto:",5,10);
+//        System.out.println(nombreProducto);
 
-
+        int NumeroProductos=IO.solicitarInt("dime el numero",5,10);
 
     }
 }
