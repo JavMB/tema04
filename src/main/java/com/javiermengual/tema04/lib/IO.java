@@ -3,6 +3,7 @@ package com.javiermengual.tema04.lib;
 import java.util.Scanner;
 
 public class IO {
+    private static Scanner sc= new Scanner(System.in);
     /**
      * @param mensaje        Mensaje que le mostramos al usuario
      * @param longitudMinima Numero minimo de caracteres de String que queremos
@@ -10,7 +11,6 @@ public class IO {
      * @return
      */
     public static String solicitarString(String mensaje, int longitudMinima, int longitudMaxima) {
-        Scanner sc = new Scanner(System.in);
         String mensajeLeido;
         boolean validado;
         do {
@@ -38,7 +38,7 @@ public class IO {
      * @return
      */
     public static int solicitarInt(String mensaje, int numeroMinimo, int numeroMaximo) {
-        Scanner sc = new Scanner(System.in);
+
         int numeroLeido;
         boolean validado;
         do {
@@ -50,5 +50,8 @@ public class IO {
         sc.close();
         System.out.println("Integer validado correctamente");
         return numeroLeido;
+    }
+    public static void dispose(){
+        sc.close();
     }
 }
