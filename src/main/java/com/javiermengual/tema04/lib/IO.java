@@ -24,7 +24,6 @@ public class IO {
 
 
         } while (!validado);
-        sc.close();
         System.out.println("String validado correctamente");
         return mensajeLeido;
 
@@ -47,7 +46,6 @@ public class IO {
 
             validado = numeroLeido >= numeroMinimo && numeroLeido <= numeroMaximo;
         } while (!validado);
-        sc.close();
         System.out.println("Integer validado correctamente");
         return numeroLeido;
     }
