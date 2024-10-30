@@ -18,8 +18,7 @@ public class Ejercicio2 {
         return ChronoUnit.DAYS.between(fechaNacimiento, fechaActual);
     }
     public static void main(String[] args) {
-        String fecha=
-                IO.solicitarString("Dime tu fecha nacimiento (dd/mm/yyyy): ",1,10);
+        String fecha= IO.solicitarString("Dime tu fecha nacimiento (dd/mm/yyyy): ",1,10);
         DateTimeFormatter formatter= DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate fechaNacimiento=LocalDate.parse(fecha,formatter);
 
